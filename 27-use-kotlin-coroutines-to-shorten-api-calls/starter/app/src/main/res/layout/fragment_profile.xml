@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/default_background"
+  android:orientation="vertical">
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/profileHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margins">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="@dimen/default_margins">
+
+      <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Username: Filip" />
+
+      <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margins"
+        tools:text="mail@mail.com" />
+
+      <TextView
+        android:id="@+id/numberOfNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margins"
+        tools:text="Number of notes: 52" />
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <Button
+    android:id="@+id/logOut"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margins"
+    android:layout_marginTop="40dp"
+    android:background="@color/colorPrimary"
+    android:text="@string/logout_button_text"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="18sp" />
+</LinearLayout>

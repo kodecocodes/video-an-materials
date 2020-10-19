@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  app:cardCornerRadius="4dp"
+  app:cardUseCompatPadding="true"
+  app:elevation="4dp">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+      android:id="@+id/taskTitle"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textSize="@dimen/large_title_text_size"
+      app:layout_constraintEnd_toStartOf="@id/taskPriority"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="Task title long long long long " />
+
+    <TextView
+      android:id="@+id/taskContent"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/half_margins"
+      android:ellipsize="end"
+      android:maxLines="3"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/taskPriority"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/taskTitle"
+      tools:text="Task title long long long long Task title long long long long Task title long long long long Task title long long long long " />
+
+    <ImageView
+      android:id="@+id/taskPriority"
+      android:layout_width="@dimen/itemPriorityWidth"
+      android:layout_height="@dimen/itemPriorityHeight"
+      android:src="@drawable/ic_priority"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/taskTitle"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="ContentDescription" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

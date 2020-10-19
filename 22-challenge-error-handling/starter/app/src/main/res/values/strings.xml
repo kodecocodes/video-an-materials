@@ -1,0 +1,25 @@
+<resources>
+  <string name="app_name">Taskie</string>
+  <string name="email_input_hint">Email</string>
+  <string name="password_input_hint">Password</string>
+  <string name="login_button_text">Login</string>
+  <string name="no_account_text">Don\'t have an accout?</string>
+  <string name="register_label">Register</string>
+  <string name="name_hint">Name</string>
+  <string name="already_registered">Already registered? Log in!</string>
+  <string name="new_task_heading_text">Create a task!</string>
+  <string name="task_title_hint">Task title</string>
+  <string name="task_text_hint">Task text</string>
+  <string name="lowPriority">Low</string>
+  <string name="mediumPriority">Medium</string>
+  <string name="highPriority">High</string>
+  <string name="save_task_text">Save task</string>
+  <string name="no_data">No data! Create some notes! :]</string>
+  <string name="empty_fields">Please check your input!</string>
+  <string name="complete_task">Complete task</string>
+  <string name="delete_task">Delete task</string>
+  <string name="invalid_data">Invalid data!</string>
+  <string name="logout_button_text">Log Out</string>
+  <string name="user_name_text">Username: %1$s</string>
+  <string name="number_of_notes_text">Number of notes: %1$d</string>
+</resources>
